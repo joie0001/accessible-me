@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
   <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     <li><a href="#main-nav">Skip to navigation</a></li>
     <li><a href="#main-content">Skip to main content</a></li>
   </ul>
-  
+
   <div class="container">
     <header class="site-header" role="banner">
       <h1 itemprop="name">Jam Box Studios</h1>
@@ -31,6 +31,7 @@
       </nav>
       <img src="https://placekitten.com/1200/900" alt="a cutekitten starring at the camera" class="banner">
     </header>
+    </div>
     <main id="main-content" class="main-content" itemprop="mainContentOftheWebpage">
       <section aria-labelledby="welcome-heading">
       <h1 id="welcome-heading">Welcome to Jam Box</h1>
@@ -45,18 +46,19 @@
           <li>Email:<a href="mailto:johnjoe@jambox.ca" itemprop="email">johnjoe@jambox.ca</a></li>
           <li>Phone:<a href="tel:613-000-0000" itemprop="telephone">613-000-0000</a></li>
         </ul>
-        <h1>Address</h1>
-        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <p>
-          <span itemprop="name">Jambox Studios</span><br>
-          <span itemprop="streetAddress">123 Guitar Road,</span><br>
-          <span itemprop="addressLocality">Musicville</span>,<span itemprop="addressRegion">Danceistan</span><br> 
-          <span itemprop="postalCode">B3T 0L0</span>
-        </p>
-        </address>
         </section>
+        <h1>Address</h1>
+        <ul itemscope itemtype="http://schema.org/Address">
+          <li itemprop="name">Jambox Studios</li>
+          <li itemprop="streetAddress">123 Guitar Road,</li>
+          <li itemprop="addressLocality">Musicville,</li>
+          <li itemprop="addressRegion">Danceistan</li> 
+          <li itemprop="postalCode">B3T 0L0</li>
+        </ul>
         
-      </div>
+        
+        
+      
       <section class="contact-section" aria-labelledby="contact-section">
         <h1 id="contact-section">Contact Us</h1>
         <form action="thanks.html">
@@ -65,17 +67,17 @@
           <label for="email">Email</label>
           <input type="text" id="email" name="email" placeholder="Email">
           <label for="subject">Subject</label>
-          <input type="text"id="subject" name="subject" placeholder="Subject">
+          <input type="text" id="subject" name="subject" placeholder="Subject">
           <b>Your Message</b>
           <textarea id="message" name="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
-    
+    </main>
     <footer class="site-footer" role="contentinfo">
       &copy; 2021 Jam Box Studios
     </footer>
-  </main>
+  
 </body>
 
 </html>
